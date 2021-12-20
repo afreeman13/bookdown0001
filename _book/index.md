@@ -1,7 +1,7 @@
 --- 
 title: "Statway College - Guided Notes"
 author: "Andre Freeman"
-date: "2021-12-19"
+date: "2021-12-20"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -21,7 +21,7 @@ biblio-style: apalike
 
 These guided notes are intended to support students in **Statway College**, and are intended for students to use _after_ complete completing the collaborations. 
 
-<img src="SWCollege.png" width="555" height="108.6" />
+<img src="SWCollege.png" width="666" height="130.32" />
 
 ## How to Best Use These Notes {-}
 
