@@ -27,8 +27,6 @@ We can also use a histogram to show the distribution.
 library(tidyverse)
 library(Lock5Data)
 
-summary(MammalLongevity)
-
 ggplot(MammalLongevity,aes(x=Longevity)) + 
   geom_histogram(fill="#8eedf7", binwidth = 5, boundary = 0,
                  color="black") + 
