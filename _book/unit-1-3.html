@@ -46,6 +46,7 @@
 <li><a class="" href="unit-1-5.html">Unit 1-5</a></li>
 <li><a class="" href="unit-1-6.html">Unit 1-6</a></li>
 <li><a class="" href="unit-1-7.html">Unit 1-7</a></li>
+<li><a class="" href="unit-1-8.html">Unit 1-8</a></li>
 </ul>
 
         <div class="book-extra">
@@ -64,20 +65,25 @@
 <li>Population: set of all people or objects that share certain characteristics.</li>
 <li>Sample: subset of all people or objects that share certain characteristics.</li>
 <li>Subjects: individuals or objects in the study</li>
-<li>Variables: the characteristics of subjects that we study</li>
+<li>Variables: the characteristics of subjects that we study
+<br>
+</li>
 </ul>
-<p>The two main types of statistical studies are:</p>
-<p><strong>Observational studies</strong>
-Researchers observe characteristics of a sample of subjects in a population.
+<div id="types-of-statistical-studies" class="section level3 unnumbered">
+<h3>Types of statistical studies<a class="anchor" aria-label="anchor" href="#types-of-statistical-studies"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Observational studies</strong></p>
+<p>Researchers observe characteristics of a sample of subjects in a population.
 No variables are manipulated.
 If the sample is representative of the population, we can use the results of an observational study to make generalizations about the population.
 The best way to ensure that a sample is representative is to use a random sample.</p>
-<p><strong>Experiments</strong>
-Researchers examine how one variable (response variable) responds when another variable (explanatory variable) is manipulated.
+<p><strong>Experiments</strong></p>
+<p>Researchers examine how one variable (response variable) responds when another variable (explanatory variable) is manipulated.
 In an experiment, researchers assign subjects to treatment groups and control groups.
 Experiments allow us to make cause-and-effect conclusions.
 In an experiment, it is possible to reach cause-and-effect conclusions if the study design uses random assignment to create the experimental groups.
 If an experiment uses both random assignment to create experimental groups and random selection from some population, it is possible to make cause-and-effect conclusions and to generalize these conclusions to the population.</p>
+</div>
 </div>
 <div id="summary-1" class="section level2 unnumbered">
 <h2>Summary<a class="anchor" aria-label="anchor" href="#summary-1"><i class="fas fa-link"></i></a>
@@ -100,7 +106,9 @@ If an experiment uses both random assignment to create experimental groups and r
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#unit-1-3">Unit 1-3</a></li>
-<li><a class="nav-link" href="#unit-1.3-research-questions-types-of-statistical-studies">Unit 1.3 – Research Questions &amp; Types of Statistical Studies</a></li>
+<li>
+<a class="nav-link" href="#unit-1.3-research-questions-types-of-statistical-studies">Unit 1.3 – Research Questions &amp; Types of Statistical Studies</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#types-of-statistical-studies">Types of statistical studies</a></li></ul>
+</li>
 <li><a class="nav-link" href="#summary-1">Summary</a></li>
 <li><a class="nav-link" href="#practice-problems-1">Practice Problems</a></li>
 </ul>
@@ -128,6 +136,34 @@ If an experiment uses both random assignment to create experimental groups and r
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>
