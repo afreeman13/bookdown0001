@@ -11,8 +11,9 @@ library(tidyverse)
 library(Lock5Data)
 
 ggplot(MammalLongevity,aes(x=Longevity)) + 
-  geom_histogram(fill="#8eedf7",binwidth=1,color="black") + 
-  theme_minimal() + ylim(0,10) +
+  geom_dotplot(fill="#8eedf7", color="black",dotsize = 1.3) + 
+  scale_y_continuous(NULL, breaks = NULL) +
+  theme_minimal() + # theme(axis.text.y = element_blank()) +
   labs(title="Mammal Longevity (in years)",x="Longevity", y = "")
 ```
 
@@ -22,9 +23,22 @@ We can see that the center of the distribution is near 12 years.  This is the va
 
 We can also use a histogram to show the distribution.  
 
+```{r mammal_hist, message=FALSE, echo=FALSE, warning=FALSE, include=TRUE, echo=FALSE}
+library(tidyverse)
+library(Lock5Data)
+
+summary(MammalLongevity)
+
+ggplot(MammalLongevity,aes(x=Longevity)) + 
+  geom_histogram(fill="#8eedf7", binwidth = 5, boundary = 0,
+                 color="black") + 
+  theme_minimal() + 
+  labs(title="Mammal Longevity (in years)",x="Longevity", y = "")
+```
+
 The histogram shows the number of data values that are contained in non-overlapping classes.  We can no longer see the individual data values, but we can see the classes that contain the most data values, and the least number of data values. 
 
-The histogram above has a bin width of 5. The first class contains values between 0 and 4, the second class contains values between 5 and 9, the third class contains values between 10 and 14, and so on.  We can see from the histogram that the majority of longevities are between 5 and 20.  The shape is skewed right.  Like a dotplot, a histogram allows us to observe characteristics of a quantitative data set.
+The histogram above has a bin width of **5**. The first class contains values between 1 and 5, the second class contains values between 6 and 10, the third class contains values between 11 and 15, and so on.  We can see from the histogram that the majority of longevities are between 6 and 20.  The shape is skewed right. Like a dotplot, a histogram allows us to observe characteristics of a quantitative data set.
 
 ## Summary {-}
 
