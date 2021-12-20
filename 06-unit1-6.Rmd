@@ -11,7 +11,7 @@ library(tidyverse)
 library(Lock5Data)
 
 ggplot(MammalLongevity,aes(x=Longevity)) + 
-  geom_histogram(fill="Lightblue",binwidth=1,color="black") + 
+  geom_histogram(fill="#8eedf7",binwidth=1,color="black") + 
   theme_minimal() + ylim(0,10) +
   labs(title="Mammal Longevity (in years)",x="Longevity", y = "")
 ```

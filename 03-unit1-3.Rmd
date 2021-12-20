@@ -4,10 +4,10 @@
 
 When conducting a statistical study, we often will use data from a sample to draw conclusions about a population.
 
-_Population_: set of all people or objects that share certain characteristics.
-_Sample_:  subset of all people or objects that share certain characteristics.
-_Subjects_: individuals or objects in the study
-_Variables_: the characteristics of subjects that we study
+* Population: set of all people or objects that share certain characteristics.
+* Sample:  subset of all people or objects that share certain characteristics.
+* Subjects: individuals or objects in the study
+* Variables: the characteristics of subjects that we study
 
 The two main types of statistical studies are:
 
