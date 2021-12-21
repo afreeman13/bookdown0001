@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo=FALSE,  message=FALSE,
                       out.width = "100%", fig.align = "center"
                       )
 library(tidyverse)
-my_theme <- theme_set(theme_minimal()) +
+my_theme <- theme_minimal() +
   theme(axis.title.y=element_blank(),
         axis.text.y=element_blank(),
         axis.ticks.y=element_blank()) +
