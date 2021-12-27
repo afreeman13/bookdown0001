@@ -1,1 +1,1 @@
-# bookdown0001
+# This is the repository for SW Guided Notes, developed in December 2021.
