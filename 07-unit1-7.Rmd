@@ -34,7 +34,7 @@ data <- c(12, 12, 14, 14, 18, 18, 19, 21, 24, 42)
 df <- as.data.frame(data)
 
 ggplot(df,aes(x=data)) + 
-  geom_dotplot(fill="#4b4e6d", color="black", dotsize = 0.9) +
+  geom_dotplot(fill="#8eedf7", color="black", dotsize = 0.9) +
   labs(title="Sample of Ages",x="Age", y = "") + 
   theme_minimal() +
   theme(axis.title.y=element_blank(),
@@ -76,7 +76,7 @@ NBAPlayers2019 %>%
   select(Games, FGMade, Blocks, Pos) %>% 
   gather(key = "key", value = "value", -Pos) %>% 
   ggplot(aes(x = value)) +
-  geom_histogram(fill="#4b4e6d", color="black", bins = 10) +
+  geom_histogram(fill="#8eedf7", color="black", bins = 10) +
   facet_wrap(~key, scales="free") + theme_minimal() +
   labs(y = "", ) + theme(axis.title.x=element_blank()) +
     theme(plot.title = element_text(size = 12), 
